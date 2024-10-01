@@ -1,0 +1,226 @@
+.register-container{
+    background: #2b353e;
+    background-image: url("../img/BGtest.gif");
+    width: 100%;
+    height:92.1vh;
+    position: relative;
+}
+.register-Form{
+    background: #00343d;
+    width: 600px;
+    height: 500px;
+    border: 2px solid white;
+    box-shadow: 2px 2px 10px 5px white;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+.register-Text-Login{
+    color: #95fde5;
+    font-size: 100px;
+    font-weight: bolder;
+    font-family: monospace;
+    text-align: center;
+}
+.register-input-username-form{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -60px;
+    text-align: center;
+    position: relative;
+}
+.register-input-username{
+    padding-left: 2%;
+    width:65%;
+    height: 70px;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid white;
+    outline: none;
+    background: transparent;
+    position: absolute;
+    top: 80px;
+    left: 100px;
+    transition: 0.2s ease;
+    z-index: 2;
+}
+.register-text-user-input{
+    font-weight: bold;
+    color: rgb(131, 131, 131);
+    background: #00343d;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: absolute;
+    top: 90px;
+    left: 120px;
+    transition: 0.2s ease;
+    font-size: 30px;
+    z-index: 1;
+}
+.register-input-password-form{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -70px;
+    text-align: center;
+    position: relative;
+}
+.register-input-password{
+    padding-left: 2%;
+    width:65%;
+    height: 70px;
+    color: rgb(131, 131, 131);
+    border-radius: 10px;
+    margin-top: 180px;
+    border: 2px solid white;
+    outline: none;
+    background: transparent;
+    position: absolute;
+    left: 100px;
+    transition: 0.2s ease;
+    z-index: 2;
+}
+.register-text-password-input{
+    font-weight: bold;
+    color: rgb(131, 131, 131);
+    background: #00343d;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: absolute;
+    top: 190px;
+    left: 120px;
+    transition: 0.2s ease;
+    font-size: 30px;
+    z-index: 1;
+}
+.register-input-conpass-form{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: relative;
+}
+.input-conpass{
+    padding-left: 2%;
+    width:65%;
+    height: 70px;
+    color: rgb(131, 131, 131);
+    border-radius: 10px;
+    margin-top: 270px;
+    border: 2px solid white;
+    outline: none;
+    background: transparent;
+    position: absolute;
+    left: 100px;
+    transition: 0.2s ease;
+    z-index: 2;
+}
+.text-conpass-input{
+    font-weight: bold;
+    color: rgb(131, 131, 131);
+    background: #00343d;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: absolute;
+    top: 280px;
+    left: 120px;
+    transition: 0.2s ease;
+    font-size: 30px;
+    z-index: 1;
+}
+
+.register-input-username:focus,
+.register-input-username:valid{
+    color: rgb(0, 255, 0);
+    border: 4px solid rgb(0, 255, 0);
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: 24px;
+}
+.register-input-username:focus + .register-text-user-input,
+.register-input-username:valid + .register-text-user-input{
+    color: rgb(0, 255, 0);
+    height: 30px;
+    line-height: 30px;
+    transform: translate(-14px,-25px);
+    font-weight: bold;
+    z-index: 3;
+    font-family: monospace;
+}
+.register-input-password:focus,
+.register-input-password:valid{
+    color: rgb(0, 255, 0);
+    border: 4px solid rgb(0, 255, 0);
+    font-family: monospace;
+    font-size: 24px;
+}
+.register-input-password:focus + .register-text-password-input,
+.register-input-password:valid + .register-text-password-input{
+    color: rgb(0, 255, 0);
+    height: 30px;
+    line-height: 30px;
+    transform: translate(-10px,-30px);
+    font-weight: bold;
+    z-index: 3;
+    font-family: monospace;
+}
+.input-conpass:focus,
+.input-conpass:valid{
+    color: rgb(0, 255, 0);
+    border: 4px solid rgb(0, 255, 0);
+    font-family: monospace;
+    font-size: 24px;
+}
+.input-conpass:focus + .text-conpass-input,
+.input-conpass:valid + .text-conpass-input{
+    color: rgb(0, 255, 0);
+    height: 30px;
+    line-height: 30px;
+    transform: translate(-10px,-30px);
+    font-weight: bold;
+    z-index: 3;
+    font-family: monospace;
+}
+.register-input-username:-webkit-autofill,
+.register-input-username:-webkit-autofill:hover,
+.register-input-username:-webkit-autofill:focus,
+.register-input-username:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #00343d inset !important; /* เปลี่ยนสีพื้นหลังให้ตรงกับสีพื้นหลังเดิม */
+    -webkit-text-fill-color: #00ff00 !important;  /* กำหนดสีตัวอักษร */
+    border: 5px solid green !important;  /* กำหนดขอบตามที่ต้องการ */
+}
+.register-submitbtn{
+    display: flex;
+    margin-top: 46vh;
+    justify-content: center;
+}
+.loginbtn{
+    border: 2px solid black;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bolder;
+    background: transparent;
+    font-size: 24px;
+    transition: all 1s ease;
+}
+.loginbtn:hover{
+    background: skyblue;
+    border: 2px solid white;
+    color: black;
+}
+.underline-b{
+    width: 0;
+    height: 0;
+    background: none;
+    transition: all 0.3s ease;
+    display: hidden;
+}
+.underline-b.active{
+    background: red;
+    width: 100%;
+    height: 5px;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+}
